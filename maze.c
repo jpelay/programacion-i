@@ -43,11 +43,7 @@ int es_solucion(int x, int y)
 
 int es_alternativa_valida(int laberinto[N][N], int x, int y)
 {
-    if (x >= 0 && x < N && y >= 0 && y < N && laberinto[x][y] == 1)
-    {
-        return 1;
-    }
-    return 0;
+   return x >= 0 && x < N && y >= 0 && y < N && laberinto[x][y] == 1;
 }
 
 void buscar_una_solucion(int laberinto[N][N], int x, int y, int solucion[N][N], int *solucion_encontrada)
